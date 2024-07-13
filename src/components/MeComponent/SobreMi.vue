@@ -17,15 +17,24 @@
         autodidacta, me esfuerzo por aprender de cada error y convertir esos
         momentos en oportunidades de crecimiento. Disfruto trabajar en equipo y
         me considero una persona con la que se puede hablar y colaborar
-        fácilmente. Soy desarrollador Full Stack, pero me especializo mas en
+        fácilmente. Soy desarrollador Full Stack, pero me especializo más en
         Frontend.
       </p>
     </div>
-    <div class="diapositiva"></div>
+    <div class="diapositiva">
+      <div class="container-text">
+        <div class="text-wrapper" v-for="column in columns" :key="column.id">
+          <div class="text-content">
+            <p v-for="item in column.items" class="items">{{ item }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup>
+import { columns } from "@/utils/columns";
 </script>
 
 <style scoped lang="scss">
@@ -64,14 +73,63 @@
   }
 }
 .diapositiva {
-  border: 1px solid blue;
   border-radius: 8px;
   width: 55%;
-  height: 400px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgb(132, 74, 205);
+  background: linear-gradient(
+    90deg,
+    rgba(132, 74, 205, 1) 35%,
+    rgba(194, 145, 255, 1) 100%
+  );
 }
 .title-principal {
   display: flex;
   gap: 15px;
   align-items: center;
+}
+.text-wrapper {
+  margin-left: -100px;
+  width: 150%;
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  transform: rotate(-13deg);
+}
+.text-content {
+  display: flex;
+  gap: 20px;
+  animation: move-rtl 1000s linear infinite;
+}
+.items {
+  text-align: center;
+  padding: 10px;
+  width: auto;
+  padding: 15px 20px;
+  border-radius: 8px;
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+}
+.container-text {
+  margin-top: -100px;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@keyframes move-rtl {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 </style>
