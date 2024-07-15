@@ -6,7 +6,7 @@
         <p class="list-item" :class="{ scrolled: isScrolled }">Sobre mi</p>
         <p class="list-item" :class="{ scrolled: isScrolled }">Proyectos</p>
         <p class="list-item" :class="{ scrolled: isScrolled }">Experiencia</p>
-        <p class="list-item" :class="{ scrolled: isScrolled }">Contacto</p>
+        <p class="list-item" :class="{ scrolled: isScrolled }"> <a href="#contact">Contacto</a></p>
       </div>
       <div class="icons">
         <div class="item" :class="{ scrolled: isScrolled }">
