@@ -1,5 +1,5 @@
 <template>
-  <div class="container-sobre-mi">
+  <div class="container-sobre-mi" id="me">
     <div class="title">
       <div class="title-principal">
         <h2>Sobre mí</h2>
@@ -130,6 +130,25 @@ import { columns } from "@/utils/columns";
   }
   100% {
     transform: translateX(-100%);
+  }
+}
+@media (width < 800px) {
+  .title h2 {
+    font-size: 40px;
+  }
+  .container-sobre-mi {
+    flex-direction: column;
+    width: 90%;
+    margin-bottom: 60px;
+    p {
+      width: 100%;
+    }
+    .title {
+      width: 100%;
+    }
+    .diapositiva {
+      width: 100%;
+    }
   }
 }
 </style>

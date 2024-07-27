@@ -9,7 +9,7 @@
       <div class="certification">
         <img src="../../assets/logos/nucbaLogo.png" alt="nucba" />
         <div class="info">
-          <p>Curso</p>
+          <p class="hidden-mobile">Curso</p>
           <h2>React</h2>
           <p>Nucba</p>
         </div>
@@ -17,7 +17,7 @@
       <div class="certification">
         <img src="../../assets/logos/coderhouseLogo.png" alt="coderhouse" />
         <div class="info">
-          <p>Curso</p>
+          <p class="hidden-mobile">Curso</p>
           <h2>Desarrollo web</h2>
           <p>Coderhouse</p>
         </div>
@@ -25,7 +25,7 @@
       <div class="certification">
         <img class="udemy" src="../../assets/logos/udemyLogo.png" alt="udemy" />
         <div class="info">
-          <p>Curso</p>
+          <p class="hidden-mobile">Curso</p>
           <h2>Javascript total</h2>
           <p>Udemy</p>
         </div>
@@ -34,8 +34,7 @@
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
 .container-certification {
@@ -109,6 +108,29 @@
   .udemy {
     width: 90px;
     height: 60px;
+  }
+}
+@media (width < 800px) {
+  .title h2 {
+    font-size: 40px;
+  }
+  .certification-option {
+    height: auto;
+    flex-direction: column;
+    width: 90%;
+  }
+  .certification {
+    width: 100%;
+    .info {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 14px;
+      .hidden-mobile {
+        display: none;
+      }
+    }
   }
 }
 </style>

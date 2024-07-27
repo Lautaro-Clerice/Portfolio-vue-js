@@ -1,12 +1,79 @@
 <template>
   <div class="header-padre">
     <div :class="['header', { scrolled: isScrolled }]">
-      <div class="logo">< <span> Lautaro clerice </span> /></div>
+      <div class="logo" @click="scrollToTop">
+        < <span> Lautaro clerice </span> />
+      </div>
       <div class="lista">
-        <p class="list-item" :class="{ scrolled: isScrolled }">Sobre mi</p>
-        <p class="list-item" :class="{ scrolled: isScrolled }">Proyectos</p>
-        <p class="list-item" :class="{ scrolled: isScrolled }">Experiencia</p>
-        <p class="list-item" :class="{ scrolled: isScrolled }"> <a href="#contact">Contacto</a></p>
+        <p
+          class="list-item"
+          :class="{ scrolled: isScrolled }"
+          @click="scrollToElement('#me')"
+        >
+        <div class="icon-mobile-container">
+          <v-icon
+          class="icon-mobile"
+            name="bi-person-circle"
+          />
+        </div>
+          Sobre mi
+        </p>
+        <p
+          class="list-item"
+          :class="{ scrolled: isScrolled }"
+          @click="scrollToElement('#me')"
+        >
+        <div class="icon-mobile-container">
+          <v-icon
+          class="icon-mobile"
+            name="pr-book"
+          />
+        </div>
+          Certificaciones
+        </p>
+
+        <p
+          class="list-item"
+          :class="{ scrolled: isScrolled }"
+          @click="scrollToElement('#projects')"
+        >
+        <div class="icon-mobile-container">
+          <v-icon
+          class="icon-mobile"
+            name="fa-network-wired"
+          />
+        </div>
+          Proyectos
+        </p>
+
+        <p
+          class="list-item"
+          :class="{ scrolled: isScrolled }"
+          @click="scrollToElement('#exp')"
+        >
+        <div class="icon-mobile-container">
+          <v-icon
+          class="icon-mobile"
+            name="md-workoutline"
+          />
+        </div>
+        
+          Experiencia
+        </p>
+        <p
+          class="list-item"
+          :class="{ scrolled: isScrolled }"
+          @click="scrollToElement('#contact')"
+        >
+        <div class="icon-mobile-container">
+          <v-icon
+          class="icon-mobile"
+            name="bi-telephone-inbound"
+          />
+        </div>
+       
+          Contacto
+        </p>
       </div>
       <div class="icons">
         <div class="item" :class="{ scrolled: isScrolled }">
@@ -36,7 +103,20 @@ const isScrolled = ref(false);
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 50;
 };
-
+const scrollToElement = (cssId) => {
+  const element = document.querySelector(cssId);
+  if (element) {
+    element.scrollIntoView({
+      behavior: "smooth",
+    });
+  }
+};
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
 onMounted(() => {
   window.addEventListener("scroll", handleScroll);
 });
@@ -152,5 +232,59 @@ onUnmounted(() => {
       color: white;
     }
   }
+}
+.icon-mobile-container {
+  display: none;
+}
+@media (width < 1100px) {
+  .header {
+    width: 90%;
+  }
+}
+@media (width < 850px) {
+  .header {
+    width: 100%;
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    &.scrolled {
+      width: 90%;
+      height: 70px;
+      border-radius: 8px;
+      backdrop-filter: none;
+    }
+    .lista {
+      gap: 0;
+    }
+  }
+  .logo {
+    display: none;
+  }
+  .lista {
+    width: 100%;
+    justify-content: space-between !important;
+  }
+  .icon {
+    display: none;
+  }
+  .icon-mobile-container {
+  display: flex;
+  .icon-mobile {
+    transform: scale(1.3);
+  }
+  }
+  .header .list-item{
+    font-size: 14px; 
+    gap: 10px;
+
+  }
+  .header .list-item.scrolled{
+    gap: 5px;
+    font-size: 14px;
+    height: auto;
+    padding-top: 20px;
+    text-align: center;
+    }
 }
 </style>

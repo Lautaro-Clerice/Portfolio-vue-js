@@ -6,14 +6,14 @@ import App from './App.vue'
 import router from './router'
 import './styles.scss'
 import { OhVueIcon, addIcons } from "oh-vue-icons";
-import { CoDocker,CoReact,CoSassAlt, IoLogoNodejs,BiGit,BiArrowRight,MdAlternateemail , BiWhatsapp, CoHtml5Shield,CoCss3Shiled, CoJavascript,CoLaravel,CoPostgresql, CoFigma ,SiMongodb, CoTypescript, BiLinkedin , BiGithub} from "oh-vue-icons/icons";
+import { CoDocker,CoReact,CoSassAlt, IoLogoNodejs,BiGit,BiArrowRight,MdAlternateemail ,PrBook ,FaNetworkWired ,BiTelephoneInbound , MdWorkoutline, BiWhatsapp, CoHtml5Shield,CoCss3Shiled, BiPersonCircle, CoJavascript,CoLaravel,CoPostgresql, CoFigma ,SiMongodb, CoTypescript, BiLinkedin , BiGithub} from "oh-vue-icons/icons";
 import 'vuetify/dist/vuetify.min.css'
-// Vuetify
+// Vuetify 
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
-addIcons(CoDocker, CoReact, CoSassAlt, IoLogoNodejs,BiArrowRight, BiGit,MdAlternateemail , BiWhatsapp,  CoHtml5Shield, CoCss3Shiled, CoJavascript, CoLaravel, CoPostgresql, CoFigma, SiMongodb, CoTypescript, BiLinkedin, BiGithub);
+addIcons(CoDocker,BiPersonCircle, CoReact, CoSassAlt, IoLogoNodejs,BiArrowRight, BiGit,MdAlternateemail ,PrBook , MdWorkoutline, BiTelephoneInbound ,FaNetworkWired, BiWhatsapp,  CoHtml5Shield, CoCss3Shiled, CoJavascript, CoLaravel, CoPostgresql, CoFigma, SiMongodb, CoTypescript, BiLinkedin, BiGithub);
 const vuetify = createVuetify({
     components,
     directives,

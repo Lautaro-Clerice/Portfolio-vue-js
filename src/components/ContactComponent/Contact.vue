@@ -7,33 +7,29 @@
     </div>
     <div class="icon-contact">
       <lord-icon
-      class="icon"
-          src="https://cdn.lordicon.com/kiynvdns.json"
-          trigger="loop"
-          delay="500"
-          colors="primary:#121331,secondary:#a866ee,tertiary:#f2e2d9,quaternary:#4bb3fd,quinary:#ebe6ef"
-          style="width:150px;height:150px">
-      </lord-icon>    
+        class="icon"
+        src="https://cdn.lordicon.com/kiynvdns.json"
+        trigger="loop"
+        delay="500"
+        colors="primary:#121331,secondary:#a866ee,tertiary:#f2e2d9,quaternary:#4bb3fd,quinary:#ebe6ef"
+        style="width: 150px; height: 150px"
+      >
+      </lord-icon>
     </div>
     <div class="text-contact">
       <h2>Hablemos!</h2>
       <p>Si tenés algun proyecto en mente, no dudes en contactarte conmigo</p>
       <div class="button-contact">
         <button>
-          <v-icon
-            name="md-alternateemail"
-          />
+          <v-icon name="md-alternateemail" />
           Email
         </button>
         <button>
-          <v-icon
-            name="bi-whatsapp"
-          />
+          <v-icon name="bi-whatsapp" />
           WhatsApp
         </button>
       </div>
     </div>
-    
   </div>
 </template>
 
@@ -58,7 +54,7 @@
 }
 .title {
   margin-top: 50px;
-  width: 35%; 
+  width: 35%;
 
   h2 {
     font-size: 56px;
@@ -85,7 +81,6 @@
   align-items: center;
   justify-content: center;
   border-radius: 50%;
- 
 }
 .text-contact {
   width: 60%;
@@ -94,49 +89,57 @@
   flex-direction: column;
   align-items: center;
   h2 {
-    font-family: 'Otterco';
+    font-family: "Otterco";
     font-size: 50px;
     font-weight: 400;
   }
-  p{
-    font-family: 'Otterco';
+  p {
+    font-family: "Otterco";
     font-size: 20px;
     color: #717171;
   }
   button {
-  padding: 1.3em 3em;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #000;
-  background-color: #fff;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-}
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+  }
 
-button:hover {
-  background-color: #8519db;
-  box-shadow: 0px 15px 20px #8419db57;
-  color: #fff;
-  transform: translateY(-7px);
-}
+  button:hover {
+    background-color: #8519db;
+    box-shadow: 0px 15px 20px #8419db57;
+    color: #fff;
+    transform: translateY(-7px);
+  }
 
-button:active {
-  transform: translateY(-1px);
-}
+  button:active {
+    transform: translateY(-1px);
+  }
 }
 .button-contact {
   display: flex;
   gap: 25px;
-  margin-top: 40px
+  margin-top: 40px;
+}
+@media (width < 800px) {
+  .title h2 {
+    font-size: 40px;
+  }
+  .text-contact {
+    text-align: center;
+  }
 }
 </style>

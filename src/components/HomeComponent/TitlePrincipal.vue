@@ -134,4 +134,10 @@ span.cursor.typing {
     background-color: transparent;
   }
 }
+@media (width < 800px) {
+  .container-title {
+    width: 90%;
+    margin-top: 60px;
+  }
+}
 </style>

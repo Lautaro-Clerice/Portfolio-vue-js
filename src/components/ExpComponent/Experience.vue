@@ -1,5 +1,5 @@
 <template>
-  <div class="container-experience">
+  <div class="container-experience" id="exp">
     <div class="container-title">
       <div class="title">
         <h2>Experiencia</h2>
@@ -64,8 +64,7 @@
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
 .container-experience {
@@ -151,6 +150,23 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+@media (width < 800px) {
+  .title h2 {
+    font-size: 40px;
+  }
+  .container-experience {
+    height: auto;
+  }
+  .experience-options {
+    width: 90%;
+    flex-direction: column;
+  }
+  .experience {
+    width: 100%;
+    height: auto;
+    padding: 30px;
   }
 }
 </style>

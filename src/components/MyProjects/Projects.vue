@@ -1,5 +1,5 @@
 <template>
-  <div class="container-projects">
+  <div class="container-projects" id="projects">
     <div class="container-title">
       <div class="title">
         <h2>Proyectos</h2>
@@ -25,8 +25,7 @@
   </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
 <style scoped lang="scss">
 .container-projects {
@@ -153,6 +152,20 @@
     &:hover {
       filter: grayscale(0);
     }
+  }
+}
+@media (width < 800px) {
+  .title h2 {
+    font-size: 40px;
+  }
+  .projects {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .project {
+    height: 300px;
+    width: 100%;
   }
 }
 </style>
