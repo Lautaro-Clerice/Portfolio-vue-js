@@ -5,11 +5,10 @@
     </div>
   </div>
 </template>
-  
-  <script setup>
-</script>
-  
-  <style scoped lang="scss">
+
+<script setup></script>
+
+<style scoped lang="scss">
 .body {
   clip-path: ellipse(100% 50% at 50% 40%);
   width: 100%;
@@ -23,5 +22,10 @@
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.678);
+}
+@media (width < 800px) {
+  .body {
+    height: 600px;
+  }
 }
 </style>

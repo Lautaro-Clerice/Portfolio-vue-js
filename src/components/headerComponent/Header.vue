@@ -5,7 +5,7 @@
         < <span> Lautaro clerice </span> />
       </div>
       <div class="lista">
-        <p
+        <!-- <p
           class="list-item"
           :class="{ scrolled: isScrolled }"
           @click="scrollToElement('#me')"
@@ -17,7 +17,7 @@
           />
         </div>
           Sobre mi
-        </p>
+        </p> -->
         <p
           class="list-item"
           :class="{ scrolled: isScrolled }"
@@ -247,12 +247,13 @@ onUnmounted(() => {
     padding: 0;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 0 ;
     &.scrolled {
-      width: 90%;
+      width: 95%;
       height: 70px;
       border-radius: 8px;
       backdrop-filter: none;
+      padding: 0;
     }
     .lista {
       gap: 0;
@@ -275,13 +276,13 @@ onUnmounted(() => {
   }
   }
   .header .list-item{
-    font-size: 14px; 
+    font-size: 12px; 
     gap: 10px;
 
   }
   .header .list-item.scrolled{
     gap: 5px;
-    font-size: 14px;
+    font-size: 12px;
     height: auto;
     padding-top: 20px;
     text-align: center;
