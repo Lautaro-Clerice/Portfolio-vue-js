@@ -20,11 +20,14 @@
       <h2>Hablemos!</h2>
       <p>Si tenés algun proyecto en mente, no dudes en contactarte conmigo</p>
       <div class="button-contact">
-        <button>
-          <v-icon name="md-alternateemail" />
-          Email
-        </button>
-        <button>
+        <Tooltip>
+          <button @click="redirectToEmail">
+            <v-icon name="md-alternateemail" />
+            Email
+          </button>
+        </Tooltip>
+
+        <button @click="redirectToWhatsApp">
           <v-icon name="bi-whatsapp" />
           WhatsApp
         </button>
@@ -33,7 +36,24 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import Tooltip from "@/utils/tooltip.vue";
+
+const redirectToWhatsApp = () => {
+  const whatsappUrl =
+    "https://api.whatsapp.com/send?phone=541162183918&text=Hola!%20Vi%20tu%20portafolio%20y...";
+  window.location.href = whatsappUrl;
+};
+const redirectToEmail = () => {
+  const email = "clericelautaro@gmail.com";
+  const subject = "Contacto por tu portfolio";
+  const body = "Hola, vi tu portfolio y...";
+  const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(
+    subject
+  )}&body=${encodeURIComponent(body)}`;
+  window.location.href = mailtoUrl;
+};
+</script>
 
 <style scoped lang="scss">
 .container-contact {
@@ -117,7 +137,12 @@
     align-items: center;
     justify-content: center;
   }
-
+  a {
+    color: black;
+  }
+  a:hover {
+    color: #fff;
+  }
   button:hover {
     background-color: #8519db;
     box-shadow: 0px 15px 20px #8419db57;
@@ -140,6 +165,9 @@
   }
   .text-contact {
     text-align: center;
+  }
+  .contact {
+    margin: 0 5%;
   }
 }
 </style>

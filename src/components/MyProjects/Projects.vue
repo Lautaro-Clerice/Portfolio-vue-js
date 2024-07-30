@@ -167,5 +167,8 @@
     height: 300px;
     width: 100%;
   }
+  .container-title {
+    margin: 0 5%;
+  }
 }
 </style>

@@ -30,6 +30,14 @@
           <p>Udemy</p>
         </div>
       </div>
+      <div class="certification">
+        <img src="../../assets/logos/nucbaLogo.png" alt="nucba" />
+        <div class="info">
+          <p class="hidden-mobile">Curso</p>
+          <h2>Full stack developer</h2>
+          <p>Nucba</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -111,6 +119,9 @@
   }
 }
 @media (width < 800px) {
+  .container-title {
+    margin: 0 5%;
+  }
   .title h2 {
     font-size: 40px;
   }

@@ -280,6 +280,7 @@ import Certifications from "@/components/CertificationsComponent/Certifications.
     width: 100%;
     height: 100%;
     position: relative;
+    display: none;
   }
   .hidden-mobile {
     display: none;

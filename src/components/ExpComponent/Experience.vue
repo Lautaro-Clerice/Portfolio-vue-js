@@ -168,5 +168,8 @@
     height: auto;
     padding: 30px;
   }
+  .container-title {
+    margin: 0 5%;
+  }
 }
 </style>

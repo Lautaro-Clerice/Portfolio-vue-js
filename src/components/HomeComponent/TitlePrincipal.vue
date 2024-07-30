@@ -137,6 +137,8 @@ span.cursor.typing {
 @media (width < 800px) {
   .container-title {
     width: 90%;
+    position: relative;
+    height: auto;
     h1 {
       font-size: 30px;
     }
@@ -144,6 +146,7 @@ span.cursor.typing {
       font-size: 45px;
     }
     .container-typing {
+      margin-top: 50px;
       .typed {
         font-size: 10px;
       }

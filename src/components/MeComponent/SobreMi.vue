@@ -14,12 +14,21 @@
 
       <p>
         ¡Hola! Mi nombre es Lautaro y tengo 25 años. Soy una persona
-        autodidacta, me esfuerzo por aprender de cada error y convertir esos
-        momentos en oportunidades de crecimiento. Disfruto trabajar en equipo y
-        me considero una persona con la que se puede hablar y colaborar
-        fácilmente. Soy desarrollador Full Stack, pero me especializo más en
+        autodidacta, me esfuerzo por
+        <span class="span-style">aprender de cada error</span> y convertir esos
+        momentos en oportunidades de
+        <span class="span-style">crecimiento</span>. Disfruto trabajar en equipo
+        y me considero una persona con la que se puede hablar y colaborar
+        fácilmente. Soy desarrollador
+        <span class="span-style">Full Stack</span>, per me especializo en
         Frontend.
       </p>
+      <!-- <div class="lang-container">
+        <div class="button-lang">VueJS</div>
+        <div class="button-lang" style="background-color: #5390d9">ReactJS</div>
+        <div class="button-lang">Javascript</div>
+        <div class="button-lang">Laravel</div>
+      </div> -->
     </div>
     <div class="diapositiva">
       <div class="container-text">
@@ -117,12 +126,31 @@ import { columns } from "@/utils/columns";
   font-size: 22px;
   font-weight: 600;
 }
+.span-style {
+  color: #7000fe;
+  font-weight: 600;
+}
 .container-text {
   margin-top: -100px;
   height: 700px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+}
+.lang-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.button-lang {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #8187dc;
+  color: white;
 }
 @keyframes move-rtl {
   0% {
