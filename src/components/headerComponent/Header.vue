@@ -77,18 +77,20 @@
       </div>
       <div class="icons">
         <div class="item" :class="{ scrolled: isScrolled }">
-          <v-icon
+          <a href="https://www.linkedin.com/in/lautaroclerice/" target="_blank"><v-icon
             name="bi-linkedin"
             class="icon"
             :class="{ scrolled: isScrolled }"
-          />
+          /></a>
+          
         </div>
         <div class="item" :class="{ scrolled: isScrolled }">
-          <v-icon
+          <a href="https://github.com/Lautaro-Clerice" target="_blank"><v-icon
             name="bi-github"
             class="icon"
             :class="{ scrolled: isScrolled }"
-          />
+          /></a>
+          
         </div>
       </div>
     </div>

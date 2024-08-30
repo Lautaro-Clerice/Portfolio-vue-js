@@ -13,6 +13,7 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
+import VueGtag from 'vue-gtag';
 addIcons(CoDocker,BiPersonCircle, CoReact, CoSassAlt, IoLogoNodejs,BiArrowRight, BiGit,MdAlternateemail ,PrBook , MdWorkoutline, BiTelephoneInbound ,FaNetworkWired, BiWhatsapp,  CoHtml5Shield, CoCss3Shiled, CoJavascript, CoLaravel, CoPostgresql, CoFigma, SiMongodb, CoTypescript, BiLinkedin, BiGithub);
 const vuetify = createVuetify({
     components,
@@ -27,7 +28,10 @@ app.use(createPinia())
 app.use(router)
 app.mount('#app')
 app.use(vuetify)
-
+app.use(VueGtag, {
+    config: { id: 'G-CVRN2YRYGF' } 
+  }); 
+  
 
 
 

@@ -152,6 +152,18 @@
     justify-content: center;
   }
 }
+@media (width < 1440px) {
+  .container-title {
+    width: 80%;
+  }
+  .experience-options {
+    width: 80%;
+  }
+  .experience {
+    width: 50%;
+    height: 250px;
+  }
+}
 @media (width < 800px) {
   .title h2 {
     font-size: 40px;

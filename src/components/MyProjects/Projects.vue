@@ -6,26 +6,41 @@
       </div>
     </div>
     <div class="projects">
-      <div class="project project1">
-        <img src="../../assets/appTurnos.png" alt="AppTurnos" />
+      <div
+        class="project project1"
+        @click="
+          handlePush('https://github.com/Lautaro-Clerice/ProyectoAgenda2-0')
+        "
+      >
+        <img src="../../assets/289shots_so.png" alt="AppTurnos" />
       </div>
-      <div class="project project2">
+      <div
+        class="project project2"
+        @click="handlePush('https://github.com/Lautaro-Clerice/becaDesign')"
+      >
+        <img class="img-1" src="../../assets/224shots_so.jpeg" alt="Phone" />
+      </div>
+      <div
+        class="project project3"
+        @click="
+          handlePush('https://github.com/Lautaro-Clerice/BecaProtectoReact')
+        "
+      >
         <img
           class="img-1"
-          src="../../assets/iPhone-13-PRO-beca-design.vercel.app.png"
+          src="../../assets/859_2x_shots_so.jpeg"
           alt="Phone"
-        /><img
-          class="img-2"
-          src="../../assets/iPhone-13-PRO-beca-design.vercel.app (3).png"
-          alt="phone"
         />
       </div>
-      <div class="project project3">Project 3</div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+function handlePush(url) {
+  window.open(url, "_blank");
+}
+</script>
 
 <style scoped lang="scss">
 .container-projects {
@@ -87,12 +102,10 @@
     "project1 project1 project1 project1 project1 project1 project3 project3 project3 project3"
     "project1 project1 project1 project1 project1 project1 project3 project3 project3 project3";
   .project {
-    padding: 20px;
     border-radius: 8px;
   }
   .project1 {
     grid-area: project1;
-    background-image: url("../../assets/backgroundProject.jpg");
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -104,10 +117,9 @@
       filter: grayscale(0);
     }
     img {
-      width: 120%;
-      height: 80%;
-      margin-left: 100px;
-      margin-top: 100px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
@@ -128,15 +140,11 @@
       width: 30%;
       height: 70%;
       position: absolute;
-      transform: rotate(340deg);
     }
     .img-1 {
-      left: 22%;
-      bottom: 70px;
-    }
-    .img-2 {
-      right: 22%;
-      bottom: 30px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   .project3 {
@@ -152,6 +160,19 @@
     &:hover {
       filter: grayscale(0);
     }
+    .img-1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+@media (width < 1440px) {
+  .container-title {
+    width: 80%;
+  }
+  .projects {
+    width: 80%;
   }
 }
 @media (width < 800px) {

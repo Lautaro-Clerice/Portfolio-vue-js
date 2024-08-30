@@ -159,6 +159,12 @@ const redirectToEmail = () => {
   gap: 25px;
   margin-top: 40px;
 }
+
+@media (width < 1440px) {
+  .contact {
+    width: 80%;
+  }
+}
 @media (width < 800px) {
   .title h2 {
     font-size: 40px;

@@ -160,6 +160,17 @@ import { columns } from "@/utils/columns";
     transform: translateX(-100%);
   }
 }
+@media (width < 1440px) {
+  .container-sobre-mi {
+    width: 80%;
+  }
+  .title {
+    width: 50%;
+  }
+  .diapositiva {
+    width: 50%;
+  }
+}
 @media (width < 800px) {
   .title h2 {
     font-size: 40px;

@@ -118,6 +118,22 @@
     height: 60px;
   }
 }
+@media (width < 1600px) {
+  .certification-option {
+    flex-wrap: wrap;
+  }
+  .certification {
+    width: 47%;
+  }
+}
+@media (width < 1440px) {
+  .certification-option {
+    width: 80%;
+  }
+  .container-title {
+    width: 80%;
+  }
+}
 @media (width < 800px) {
   .container-title {
     margin: 0 5%;
