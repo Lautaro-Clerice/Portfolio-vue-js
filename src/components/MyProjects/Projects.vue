@@ -32,6 +32,16 @@
           alt="Phone"
         />
       </div>
+      <div
+        class="project project4"
+        @click="handlePush('https://complementos.janoseventos.com')"
+      >
+        <img
+          class="img-1"
+          src="../../assets/JanosComplementos.jpeg"
+          alt="janos"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -82,30 +92,22 @@ function handlePush(url) {
   }
 }
 .projects {
-  display: grid;
   margin: 0 auto;
   width: 60%;
   height: 900px;
-  grid-template-columns: repeat(10, 1fr); /* 10 columnas iguales */
-  grid-template-rows: repeat(10, 1fr); /* 10 filas iguales */
-  gap: 10px; /* Espacio entre los elementos */
-  padding: 10px; /* Espacio interno en el contenedor principal */
-  grid-template-areas:
-    "project1 project1 project1 project1 project1 project1 project2 project2 project2 project2"
-    "project1 project1 project1 project1 project1 project1 project2 project2 project2 project2"
-    "project1 project1 project1 project1 project1 project1 project2 project2 project2 project2"
-    "project1 project1 project1 project1 project1 project1 project2 project2 project2 project2"
-    "project1 project1 project1 project1 project1 project1 project2 project2 project2 project2"
-    "project1 project1 project1 project1 project1 project1 project3 project3 project3 project3"
-    "project1 project1 project1 project1 project1 project1 project3 project3 project3 project3"
-    "project1 project1 project1 project1 project1 project1 project3 project3 project3 project3"
-    "project1 project1 project1 project1 project1 project1 project3 project3 project3 project3"
-    "project1 project1 project1 project1 project1 project1 project3 project3 project3 project3";
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+  padding: 10px;
+
   .project {
     border-radius: 8px;
+    cursor: pointer;
   }
   .project1 {
-    grid-area: project1;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -124,7 +126,10 @@ function handlePush(url) {
   }
 
   .project2 {
-    grid-area: project2;
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
     background-image: url("../../assets/backProj.jpg");
     background-attachment: fixed;
     background-position: center;
@@ -148,7 +153,32 @@ function handlePush(url) {
     }
   }
   .project3 {
-    grid-area: project3;
+    grid-column: span 3 / span 3;
+    grid-row: span 3 / span 3;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    background-image: url("../../assets/BackgroundProject2.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    &:hover {
+      filter: grayscale(0);
+    }
+    .img-1 {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .project4 {
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 4;
+    grid-row-start: 4;
     background-image: url("../../assets/BackgroundProject2.jpg");
     background-attachment: fixed;
     background-position: center;
