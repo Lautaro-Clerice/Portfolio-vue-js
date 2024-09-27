@@ -12,12 +12,29 @@
           handlePush('https://github.com/Lautaro-Clerice/ProyectoAgenda2-0')
         "
       >
+        <div class="title-project">Turnero</div>
+
+        <div class="tooltip">
+          <v-icon name="si-mongodb" class="icono" /><v-icon
+            name="co-typescript"
+            class="icono"
+          />
+          <v-icon name="co-react" class="icono" />
+          <v-icon name="io-logo-nodejs" class="icono" />
+        </div>
+
         <img src="../../assets/289shots_so.png" alt="AppTurnos" />
       </div>
       <div
         class="project project2"
         @click="handlePush('https://github.com/Lautaro-Clerice/becaDesign')"
       >
+        <div class="title-project" style="z-index: 100000">
+          Venta de páginas
+        </div>
+        <div class="tooltip">
+          <v-icon name="co-react" class="icono" />
+        </div>
         <img class="img-1" src="../../assets/224shots_so.jpeg" alt="Phone" />
       </div>
       <div
@@ -26,6 +43,12 @@
           handlePush('https://github.com/Lautaro-Clerice/BecaProtectoReact')
         "
       >
+        <div class="title-project">Beca E-commerce</div>
+        <div class="tooltip">
+          <v-icon name="co-html5-shield" class="icono" />
+          <v-icon name="co-css3-shiled" class="icono" />
+          <v-icon name="co-javascript" class="icono" />
+        </div>
         <img
           class="img-1"
           src="../../assets/859_2x_shots_so.jpeg"
@@ -36,6 +59,12 @@
         class="project project4"
         @click="handlePush('https://complementos.janoseventos.com')"
       >
+        <div class="title-project">Janos complementos</div>
+        <div class="tooltip">
+          <v-icon name="co-vue-js" class="icono" />
+          <v-icon name="co-laravel" class="icono" />
+          <v-icon name="co-postgresql" class="icono" />
+        </div>
         <img
           class="img-1"
           src="../../assets/JanosComplementos.jpeg"
@@ -100,11 +129,45 @@ function handlePush(url) {
   grid-template-rows: repeat(5, 1fr);
   gap: 8px;
   padding: 10px;
-
   .project {
     border-radius: 8px;
     cursor: pointer;
+    position: relative;
+    filter: grayscale(100%);
+    &:hover {
+      filter: grayscale(0);
+    }
+    &:hover .tooltip {
+      opacity: 1;
+      visibility: visible;
+    }
+    .tooltip {
+      position: absolute;
+      opacity: 0;
+      transition: 0.4s;
+      visibility: hidden;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      bottom: 20px;
+      z-index: 3;
+      right: 20px;
+      .icono {
+        color: white;
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .title-project {
+      position: absolute;
+      font-weight: 600;
+      color: white;
+      font-size: 30px;
+      bottom: 10px;
+      left: 20px;
+    }
   }
+
   .project1 {
     grid-column: span 2 / span 2;
     grid-row: span 3 / span 3;
@@ -113,11 +176,8 @@ function handlePush(url) {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    filter: grayscale(100%);
     transition: 0.5s;
-    &:hover {
-      filter: grayscale(0);
-    }
+
     img {
       width: 100%;
       height: 100%;
@@ -136,11 +196,8 @@ function handlePush(url) {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    filter: grayscale(100%);
     transition: 0.5s;
-    &:hover {
-      filter: grayscale(0);
-    }
+
     img {
       width: 30%;
       height: 70%;
@@ -152,7 +209,7 @@ function handlePush(url) {
       object-fit: cover;
     }
   }
-  .project3 {
+  .project4 {
     grid-column: span 3 / span 3;
     grid-row: span 3 / span 3;
     grid-column-start: 3;
@@ -163,18 +220,15 @@ function handlePush(url) {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    filter: grayscale(100%);
     transition: 0.5s;
-    &:hover {
-      filter: grayscale(0);
-    }
+
     .img-1 {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
-  .project4 {
+  .project3 {
     grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
     grid-column-start: 4;
@@ -185,11 +239,7 @@ function handlePush(url) {
     background-size: cover;
     position: relative;
     overflow: hidden;
-    filter: grayscale(100%);
     transition: 0.5s;
-    &:hover {
-      filter: grayscale(0);
-    }
     .img-1 {
       width: 100%;
       height: 100%;
@@ -203,6 +253,14 @@ function handlePush(url) {
   }
   .projects {
     width: 80%;
+    .project .title-project {
+      font-weight: 500;
+      font-size: 25px;
+      bottom: 0;
+    }
+    .project .tooltip {
+      bottom: 10px;
+    }
   }
 }
 @media (width < 800px) {
@@ -214,10 +272,30 @@ function handlePush(url) {
     flex-direction: column;
     width: 90%;
   }
-  .project {
+  .projects .project {
     height: 300px;
     width: 100%;
+    filter: none;
   }
+  .projects {
+    height: auto;
+    .project .tooltip {
+      opacity: 1;
+      visibility: visible;
+      width: 100%;
+      justify-content: center;
+      bottom: 10px;
+      right: inherit;
+    }
+    .project .title-project {
+      font-size: 18px;
+      width: 100%;
+      top: 10px;
+      left: 0;
+      text-align: center;
+    }
+  }
+
   .container-title {
     margin: 0 5%;
   }

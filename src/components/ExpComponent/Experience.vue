@@ -27,13 +27,13 @@
             style="width: 20px; height: 20px"
           >
           </lord-icon>
-          Febrero 2024
+          Actualidad
         </p>
         <h2>Freelance Developer</h2>
         <p>
-          Trabajé como desarrollador freelance en plataformas como Fiverr,
-          Utilizé ReactJs para el frontend, NodeJs para el backend con bases de
-          datos en MongoDB
+          Trabajo como desarrollador freelance, Desarrollo de E-commerce,
+          landing page, etc. Las tecnologías que manejo normalmente son Python
+          para el backend y VueJs para el frontend.
         </p>
       </div>
       <div class="experience">

@@ -20,7 +20,7 @@
         <span class="span-style">crecimiento</span>. Disfruto trabajar en equipo
         y me considero una persona con la que se puede hablar y colaborar
         fácilmente. Soy desarrollador
-        <span class="span-style">Full Stack</span>, per me especializo en
+        <span class="span-style">Full Stack</span>, pero me especializo en
         Frontend.
       </p>
       <!-- <div class="lang-container">

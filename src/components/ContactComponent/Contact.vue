@@ -17,7 +17,7 @@
       </lord-icon>
     </div>
     <div class="text-contact">
-      <h2>Hablemos!</h2>
+      <h2>¡Hablemos!</h2>
       <p>Si tenés algun proyecto en mente, no dudes en contactarte conmigo</p>
       <div class="button-contact">
         <Tooltip>
