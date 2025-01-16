@@ -8,22 +8,17 @@
     <div class="projects">
       <div
         class="project project1"
-        @click="
-          handlePush('https://github.com/Lautaro-Clerice/ProyectoAgenda2-0')
-        "
+        @click="handlePush('https://janoseventos.com')"
       >
-        <div class="title-project">Turnero</div>
+        <div class="title-project">Janos eventos</div>
 
         <div class="tooltip">
-          <v-icon name="si-mongodb" class="icono" /><v-icon
-            name="co-typescript"
-            class="icono"
-          />
+          <v-icon name="co-typescript" class="icono" />
           <v-icon name="co-react" class="icono" />
-          <v-icon name="io-logo-nodejs" class="icono" />
+          <v-icon name="si-strapi" class="icono" />
         </div>
 
-        <img src="../../assets/289shots_so.png" alt="AppTurnos" />
+        <img src="../../assets/7shots_so.png" alt="AppTurnos" />
       </div>
       <div
         class="project project2"
@@ -169,8 +164,10 @@ function handlePush(url) {
   }
 
   .project1 {
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
+    grid-column: span 3 / span 3;
+    grid-row: span 2 / span 2;
+    grid-column-start: 1;
+    grid-row-start: 4;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -186,10 +183,9 @@ function handlePush(url) {
   }
 
   .project2 {
-    grid-column: span 3 / span 3;
-    grid-row: span 2 / span 2;
-    grid-column-start: 1;
-    grid-row-start: 4;
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+
     background-image: url("../../assets/backProj.jpg");
     background-attachment: fixed;
     background-position: center;
