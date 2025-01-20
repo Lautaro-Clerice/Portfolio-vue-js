@@ -34,21 +34,13 @@
       </div>
       <div
         class="project project3"
-        @click="
-          handlePush('https://github.com/Lautaro-Clerice/BecaProtectoReact')
-        "
+        @click="handlePush('https://tutur-vue.vercel.app/')"
       >
-        <div class="title-project">Beca E-commerce</div>
+        <div class="title-project">Tutur Vue</div>
         <div class="tooltip">
-          <v-icon name="co-html5-shield" class="icono" />
-          <v-icon name="co-css3-shiled" class="icono" />
-          <v-icon name="co-javascript" class="icono" />
+          <v-icon name="co-vue-js" class="icono" />
         </div>
-        <img
-          class="img-1"
-          src="../../assets/859_2x_shots_so.jpeg"
-          alt="Phone"
-        />
+        <img class="img-1" src="../../assets//tuturVue.png" alt="Phone" />
       </div>
       <div
         class="project project4"
