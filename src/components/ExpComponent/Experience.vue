@@ -18,7 +18,7 @@
           </lord-icon>
         </div>
         <p>
-          Agosto 2023
+          Agosto 2022
           <lord-icon
             src="https://cdn.lordicon.com/zmkotitn.json"
             trigger="loop"
@@ -31,9 +31,10 @@
         </p>
         <h2>Freelance Developer</h2>
         <p>
-          Trabajo como desarrollador freelance, Desarrollo de E-commerce,
-          landing page, etc. Las tecnologías que manejo normalmente son Python
-          para el backend y VueJs para el frontend.
+          Desarrollo de tiendas online B2C y B2B con Next.js, React y Python.
+          Implementación de carritos, filtros, buscadores y paneles
+          administrativos. Enfoque en rendimiento, SEO técnico y accesibilidad
+          web.
         </p>
       </div>
       <div class="experience">
@@ -41,7 +42,7 @@
           <img src="../../assets/LogoMinimal.png" alt="Janos" />
         </div>
         <p>
-          Marzo 2024
+          Marzo 2022
           <lord-icon
             src="https://cdn.lordicon.com/zmkotitn.json"
             trigger="loop"
@@ -54,10 +55,10 @@
         </p>
         <h2>Full stack developer</h2>
         <p>
-          En Jano's, utilizo tecnologías como Laravel para el backend y VueJS
-          para el frontend. También utilizamos Docker para la contenerización y
-          despliegue de aplicaciones, y Git para la colaboración en el
-          desarrollo.
+          Desarrollo de plataformas web: Janos Eventos, Mi Evento, Complementos
+          de Janos. Implementación full stack con React, Vue, NestJS y
+          PostgreSQL. Integración de CI/CD con GitHub Actions y despliegue en
+          AWS EC2.
         </p>
       </div>
     </div>
