@@ -1,13 +1,43 @@
 <template>
   <div class="container-experience" id="exp">
     <div class="container-title">
-      <div class="title">
+      <motion.div
+        class="title"
+        :initial="{ opacity: 0, y: 60 }"
+        :whileInView="{ opacity: 1, y: 0 }"
+        :transition="{
+          duration: 0.8,
+          ease: [0.25, 0.1, 0.25, 1],
+          delay: 0.1,
+        }"
+        :viewport="{ once: false, margin: '-100px' }"
+      >
         <h2>Experiencia</h2>
-      </div>
+      </motion.div>
     </div>
     <div class="experience-options">
-      <div class="experience">
-        <div class="logo-empresa freelance">
+      <motion.div
+        class="experience"
+        :initial="{ opacity: 0, y: 100, scale: 0.9 }"
+        :whileInView="{ opacity: 1, y: 0, scale: 1 }"
+        :transition="{
+          duration: 0.8,
+          ease: [0.25, 0.1, 0.25, 1],
+          delay: 0.1,
+        }"
+        :viewport="{ once: false, margin: '-80px' }"
+      >
+        <motion.div 
+          class="logo-empresa freelance"
+          :initial="{ opacity: 0, scale: 0.8, rotate: -10 }"
+          :whileInView="{ opacity: 1, scale: 1, rotate: 0 }"
+          :transition="{
+            duration: 0.6,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.3,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >
           <lord-icon
             src="https://cdn.lordicon.com/lzgmgrnn.json"
             trigger="loop"
@@ -16,8 +46,17 @@
             style="width: 40px; height: 40px"
           >
           </lord-icon>
-        </div>
-        <p>
+        </motion.div>
+        <motion.p
+          :initial="{ opacity: 0, x: -30 }"
+          :whileInView="{ opacity: 1, x: 0 }"
+          :transition="{
+            duration: 0.6,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.4,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >
           Agosto 2022
           <lord-icon
             src="https://cdn.lordicon.com/zmkotitn.json"
@@ -28,20 +67,67 @@
           >
           </lord-icon>
           Actualidad
-        </p>
-        <h2>Freelance Developer</h2>
-        <p>
+        </motion.p>
+        <motion.h2
+          :initial="{ opacity: 0, y: 20 }"
+          :whileInView="{ opacity: 1, y: 0 }"
+          :transition="{
+            duration: 0.5,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.5,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >Freelance Developer</motion.h2>
+        <motion.p
+          :initial="{ opacity: 0, y: 20 }"
+          :whileInView="{ opacity: 1, y: 0 }"
+          :transition="{
+            duration: 0.5,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.6,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >
           Desarrollo de tiendas online B2C y B2B con Next.js, React y Python.
           Implementación de carritos, filtros, buscadores y paneles
           administrativos. Enfoque en rendimiento, SEO técnico y accesibilidad
           web.
-        </p>
-      </div>
-      <div class="experience">
-        <div class="logo-empresa">
+        </motion.p>
+      </motion.div>
+      <motion.div
+        class="experience"
+        :initial="{ opacity: 0, y: 100, scale: 0.9 }"
+        :whileInView="{ opacity: 1, y: 0, scale: 1 }"
+        :transition="{
+          duration: 0.8,
+          ease: [0.25, 0.1, 0.25, 1],
+          delay: 0.4,
+        }"
+        :viewport="{ once: false, margin: '-80px' }"
+      >
+        <motion.div 
+          class="logo-empresa"
+          :initial="{ opacity: 0, scale: 0.8, rotate: 10 }"
+          :whileInView="{ opacity: 1, scale: 1, rotate: 0 }"
+          :transition="{
+            duration: 0.6,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.6,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >
           <img src="../../assets/LogoMinimal.png" alt="Janos" />
-        </div>
-        <p>
+        </motion.div>
+        <motion.p
+          :initial="{ opacity: 0, x: 30 }"
+          :whileInView="{ opacity: 1, x: 0 }"
+          :transition="{
+            duration: 0.6,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.7,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >
           Marzo 2022
           <lord-icon
             src="https://cdn.lordicon.com/zmkotitn.json"
@@ -52,20 +138,40 @@
           >
           </lord-icon>
           Actualidad
-        </p>
-        <h2>Full stack developer</h2>
-        <p>
+        </motion.p>
+        <motion.h2
+          :initial="{ opacity: 0, y: 20 }"
+          :whileInView="{ opacity: 1, y: 0 }"
+          :transition="{
+            duration: 0.5,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.8,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >Full stack developer</motion.h2>
+        <motion.p
+          :initial="{ opacity: 0, y: 20 }"
+          :whileInView="{ opacity: 1, y: 0 }"
+          :transition="{
+            duration: 0.5,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.9,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >
           Desarrollo de plataformas web: Janos Eventos, Mi Evento, Complementos
           de Janos. Implementación full stack con React, Vue, NestJS y
           PostgreSQL. Integración de CI/CD con GitHub Actions y despliegue en
           AWS EC2.
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
     </div>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { motion } from "motion-v";
+</script>
 
 <style scoped lang="scss">
 .container-experience {
