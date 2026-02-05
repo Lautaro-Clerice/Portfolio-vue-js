@@ -27,7 +27,7 @@
         }"
         :viewport="{ once: false, margin: '-80px' }"
       >
-        <motion.div 
+        <motion.div
           class="logo-empresa digitalhouse"
           :initial="{ opacity: 0, scale: 0.8, rotate: 10 }"
           :whileInView="{ opacity: 1, scale: 1, rotate: 0 }"
@@ -77,7 +77,8 @@
             delay: 0.5,
           }"
           :viewport="{ once: false, margin: '-50px' }"
-        >Frontend engineer</motion.h2>
+          >Frontend engineer</motion.h2
+        >
         <motion.p
           :initial="{ opacity: 0, y: 20 }"
           :whileInView="{ opacity: 1, y: 0 }"
@@ -88,7 +89,9 @@
           }"
           :viewport="{ once: false, margin: '-50px' }"
         >
-          Desarrollo de plataformas educativas web de gran escala sobre LMS. Diseño e implementación de soluciones frontend con arquitecturas microfrontend y multitenant.
+          Desarrollo de plataformas educativas web de gran escala sobre LMS.
+          Diseño e implementación de soluciones frontend con arquitecturas
+          microfrontend y multitenant.
         </motion.p>
       </motion.div>
       <motion.div
@@ -102,7 +105,7 @@
         }"
         :viewport="{ once: false, margin: '-80px' }"
       >
-        <motion.div 
+        <motion.div
           class="logo-empresa freelance"
           :initial="{ opacity: 0, scale: 0.8, rotate: -10 }"
           :whileInView="{ opacity: 1, scale: 1, rotate: 0 }"
@@ -152,7 +155,8 @@
             delay: 0.8,
           }"
           :viewport="{ once: false, margin: '-50px' }"
-        >Freelance Developer</motion.h2>
+          >Freelance Developer</motion.h2
+        >
         <motion.p
           :initial="{ opacity: 0, y: 20 }"
           :whileInView="{ opacity: 1, y: 0 }"
@@ -180,7 +184,7 @@
         }"
         :viewport="{ once: false, margin: '-80px' }"
       >
-        <motion.div 
+        <motion.div
           class="logo-empresa"
           :initial="{ opacity: 0, scale: 0.8, rotate: 10 }"
           :whileInView="{ opacity: 1, scale: 1, rotate: 0 }"
@@ -223,7 +227,8 @@
             delay: 1.1,
           }"
           :viewport="{ once: false, margin: '-50px' }"
-        >Full stack developer</motion.h2>
+          >Full stack developer</motion.h2
+        >
         <motion.p
           :initial="{ opacity: 0, y: 20 }"
           :whileInView="{ opacity: 1, y: 0 }"
@@ -344,7 +349,7 @@ import { motion } from "motion-v";
     justify-content: center;
   }
   .digitalhouse {
-    background-color: #FFC917;
+    background-color: #ffc917;
     display: flex;
     align-items: center;
     justify-content: center;

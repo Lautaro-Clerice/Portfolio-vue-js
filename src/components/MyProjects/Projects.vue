@@ -31,17 +31,17 @@
       </div>
       <div
         class="project project4"
-        @click="handlePush('https://invitation-front-chi.vercel.app/evento/lautaroydafne')"
+        @click="
+          handlePush(
+            'https://invitation-front-chi.vercel.app/evento/lautaroydafne',
+          )
+        "
       >
         <div class="title-project">Invitación digital</div>
         <div class="tooltip">
           <v-icon name="co-react" class="icono" />
         </div>
-        <img
-          class="img-1"
-          src="../../assets/Invite.png"
-          alt="invitation"
-        />
+        <img class="img-1" src="../../assets/Invite.png" alt="invitation" />
       </div>
     </div>
   </div>
