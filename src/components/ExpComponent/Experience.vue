@@ -28,13 +28,88 @@
         :viewport="{ once: false, margin: '-80px' }"
       >
         <motion.div 
+          class="logo-empresa digitalhouse"
+          :initial="{ opacity: 0, scale: 0.8, rotate: 10 }"
+          :whileInView="{ opacity: 1, scale: 1, rotate: 0 }"
+          :transition="{
+            duration: 0.6,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.3,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >
+          <lord-icon
+            src="https://cdn.lordicon.com/vuiggmtc.json"
+            trigger="loop"
+            delay="1500"
+            colors="primary:#ffffff"
+            style="width: 40px; height: 40px"
+          >
+          </lord-icon>
+        </motion.div>
+        <motion.p
+          :initial="{ opacity: 0, x: 30 }"
+          :whileInView="{ opacity: 1, x: 0 }"
+          :transition="{
+            duration: 0.6,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.4,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >
+          Noviembre 2025
+          <lord-icon
+            src="https://cdn.lordicon.com/zmkotitn.json"
+            trigger="loop"
+            delay="1000"
+            colors="primary:#717171"
+            style="width: 20px; height: 20px"
+          >
+          </lord-icon>
+          Actualidad
+        </motion.p>
+        <motion.h2
+          :initial="{ opacity: 0, y: 20 }"
+          :whileInView="{ opacity: 1, y: 0 }"
+          :transition="{
+            duration: 0.5,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.5,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >Frontend engineer</motion.h2>
+        <motion.p
+          :initial="{ opacity: 0, y: 20 }"
+          :whileInView="{ opacity: 1, y: 0 }"
+          :transition="{
+            duration: 0.5,
+            ease: [0.25, 0.1, 0.25, 1],
+            delay: 0.6,
+          }"
+          :viewport="{ once: false, margin: '-50px' }"
+        >
+          Desarrollo de plataformas educativas web de gran escala sobre LMS. Diseño e implementación de soluciones frontend con arquitecturas microfrontend y multitenant.
+        </motion.p>
+      </motion.div>
+      <motion.div
+        class="experience"
+        :initial="{ opacity: 0, y: 100, scale: 0.9 }"
+        :whileInView="{ opacity: 1, y: 0, scale: 1 }"
+        :transition="{
+          duration: 0.8,
+          ease: [0.25, 0.1, 0.25, 1],
+          delay: 0.4,
+        }"
+        :viewport="{ once: false, margin: '-80px' }"
+      >
+        <motion.div 
           class="logo-empresa freelance"
           :initial="{ opacity: 0, scale: 0.8, rotate: -10 }"
           :whileInView="{ opacity: 1, scale: 1, rotate: 0 }"
           :transition="{
             duration: 0.6,
             ease: [0.25, 0.1, 0.25, 1],
-            delay: 0.3,
+            delay: 0.6,
           }"
           :viewport="{ once: false, margin: '-50px' }"
         >
@@ -53,7 +128,7 @@
           :transition="{
             duration: 0.6,
             ease: [0.25, 0.1, 0.25, 1],
-            delay: 0.4,
+            delay: 0.7,
           }"
           :viewport="{ once: false, margin: '-50px' }"
         >
@@ -74,7 +149,7 @@
           :transition="{
             duration: 0.5,
             ease: [0.25, 0.1, 0.25, 1],
-            delay: 0.5,
+            delay: 0.8,
           }"
           :viewport="{ once: false, margin: '-50px' }"
         >Freelance Developer</motion.h2>
@@ -84,7 +159,7 @@
           :transition="{
             duration: 0.5,
             ease: [0.25, 0.1, 0.25, 1],
-            delay: 0.6,
+            delay: 0.9,
           }"
           :viewport="{ once: false, margin: '-50px' }"
         >
@@ -101,7 +176,7 @@
         :transition="{
           duration: 0.8,
           ease: [0.25, 0.1, 0.25, 1],
-          delay: 0.4,
+          delay: 0.7,
         }"
         :viewport="{ once: false, margin: '-80px' }"
       >
@@ -112,7 +187,7 @@
           :transition="{
             duration: 0.6,
             ease: [0.25, 0.1, 0.25, 1],
-            delay: 0.6,
+            delay: 0.9,
           }"
           :viewport="{ once: false, margin: '-50px' }"
         >
@@ -124,11 +199,11 @@
           :transition="{
             duration: 0.6,
             ease: [0.25, 0.1, 0.25, 1],
-            delay: 0.7,
+            delay: 1.0,
           }"
           :viewport="{ once: false, margin: '-50px' }"
         >
-          Marzo 2022
+          Noviembre 2022
           <lord-icon
             src="https://cdn.lordicon.com/zmkotitn.json"
             trigger="loop"
@@ -137,7 +212,7 @@
             style="width: 20px; height: 20px"
           >
           </lord-icon>
-          Actualidad
+          Noviembre 2025
         </motion.p>
         <motion.h2
           :initial="{ opacity: 0, y: 20 }"
@@ -145,7 +220,7 @@
           :transition="{
             duration: 0.5,
             ease: [0.25, 0.1, 0.25, 1],
-            delay: 0.8,
+            delay: 1.1,
           }"
           :viewport="{ once: false, margin: '-50px' }"
         >Full stack developer</motion.h2>
@@ -155,7 +230,7 @@
           :transition="{
             duration: 0.5,
             ease: [0.25, 0.1, 0.25, 1],
-            delay: 0.9,
+            delay: 1.2,
           }"
           :viewport="{ once: false, margin: '-50px' }"
         >
@@ -231,6 +306,7 @@ import { motion } from "motion-v";
   justify-content: center;
   position: relative;
   transition: 0.5s;
+  overflow: visible;
   &:hover {
     transform: scale(1.02);
   }
@@ -239,6 +315,14 @@ import { motion } from "motion-v";
     gap: 8px;
     align-items: center;
     color: #717171;
+    font-size: 14px;
+    text-align: center;
+    word-wrap: break-word;
+  }
+  h2 {
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
   }
   .logo-empresa {
     border-radius: 50%;
@@ -247,6 +331,7 @@ import { motion } from "motion-v";
     position: absolute;
     top: -25px;
     background-color: white;
+    z-index: 10;
     img {
       width: 50px;
       height: 50px;
@@ -254,6 +339,12 @@ import { motion } from "motion-v";
   }
   .freelance {
     background-color: rgb(250, 212, 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .digitalhouse {
+    background-color: #FFC917;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -268,7 +359,15 @@ import { motion } from "motion-v";
   }
   .experience {
     width: 50%;
-    height: 250px;
+    height: auto;
+    min-height: 280px;
+    padding: 30px 15px;
+    p {
+      font-size: 13px;
+    }
+    h2 {
+      font-size: 18px;
+    }
   }
 }
 @media (width < 800px) {
@@ -285,7 +384,16 @@ import { motion } from "motion-v";
   .experience {
     width: 100%;
     height: auto;
-    padding: 30px;
+    min-height: 250px;
+    padding: 40px 20px 30px;
+    p {
+      font-size: 12px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    h2 {
+      font-size: 16px;
+    }
   }
   .container-title {
     margin: 0 5%;
