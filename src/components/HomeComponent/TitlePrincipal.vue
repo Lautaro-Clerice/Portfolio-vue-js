@@ -53,7 +53,6 @@ const eraseText = () => {
     setTimeout(typeText, typingSpeed + 1000);
   }
 };
-
 onMounted(() => {
   setTimeout(typeText, newTextDelay + 200);
 });
