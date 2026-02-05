@@ -13,7 +13,7 @@
       </div>
 
       <p>
-        ¡Hola! Mi nombre es Lautaro y tengo 25 años. Soy una persona
+        ¡Hola! Mi nombre es Lautaro y tengo 27 años. Soy una persona
         autodidacta, me esfuerzo por
         <span class="span-style">aprender de cada error</span> y convertir esos
         momentos en oportunidades de

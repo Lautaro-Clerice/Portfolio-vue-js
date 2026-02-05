@@ -8,29 +8,16 @@
     <div class="projects">
       <div
         class="project project1"
-        @click="handlePush('https://janoseventos.com')"
+        @click="handlePush('https://invitly-front.vercel.app/es')"
       >
-        <div class="title-project">Janos eventos</div>
+        <div class="title-project">Venta de invitaciones digitales</div>
 
         <div class="tooltip">
+          <v-icon name="co-next-js" class="icono" />
           <v-icon name="co-typescript" class="icono" />
-          <v-icon name="co-react" class="icono" />
-          <v-icon name="si-strapi" class="icono" />
         </div>
 
-        <img src="../../assets/7shots_so.png" alt="AppTurnos" />
-      </div>
-      <div
-        class="project project2"
-        @click="handlePush('https://github.com/Lautaro-Clerice/becaDesign')"
-      >
-        <div class="title-project" style="z-index: 100000">
-          Venta de páginas
-        </div>
-        <div class="tooltip">
-          <v-icon name="co-react" class="icono" />
-        </div>
-        <img class="img-1" src="../../assets/224shots_so.jpeg" alt="Phone" />
+        <img src="../../assets/invitly.png" alt="Invitly" />
       </div>
       <div
         class="project project3"
@@ -44,19 +31,17 @@
       </div>
       <div
         class="project project4"
-        @click="handlePush('https://complementos.janoseventos.com')"
+        @click="
+          handlePush(
+            'https://invitation-front-chi.vercel.app/evento/lautaroydafne',
+          )
+        "
       >
-        <div class="title-project">Janos complementos</div>
+        <div class="title-project">Invitación digital</div>
         <div class="tooltip">
-          <v-icon name="co-vue-js" class="icono" />
-          <v-icon name="co-laravel" class="icono" />
-          <v-icon name="co-postgresql" class="icono" />
+          <v-icon name="co-react" class="icono" />
         </div>
-        <img
-          class="img-1"
-          src="../../assets/JanosComplementos.jpeg"
-          alt="janos"
-        />
+        <img class="img-1" src="../../assets/Invite.png" alt="invitation" />
       </div>
     </div>
   </div>
@@ -110,10 +95,10 @@ function handlePush(url) {
 .projects {
   margin: 0 auto;
   width: 60%;
-  height: 900px;
+  height: 700px;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
   gap: 8px;
   padding: 10px;
   .project {
@@ -156,10 +141,10 @@ function handlePush(url) {
   }
 
   .project1 {
-    grid-column: span 3 / span 3;
+    grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
     grid-column-start: 1;
-    grid-row-start: 4;
+    grid-row-start: 1;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -174,32 +159,9 @@ function handlePush(url) {
     }
   }
 
-  .project2 {
-    grid-column: span 2 / span 2;
-    grid-row: span 3 / span 3;
-
-    background-image: url("../../assets/backProj.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    transition: 0.5s;
-
-    img {
-      width: 30%;
-      height: 70%;
-      position: absolute;
-    }
-    .img-1 {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
   .project4 {
-    grid-column: span 3 / span 3;
-    grid-row: span 3 / span 3;
+    grid-column: span 2 / span 2;
+    grid-row: span 4 / span 4;
     grid-column-start: 3;
     grid-row-start: 1;
     background-image: url("../../assets/BackgroundProject2.jpg");
@@ -219,8 +181,8 @@ function handlePush(url) {
   .project3 {
     grid-column: span 2 / span 2;
     grid-row: span 2 / span 2;
-    grid-column-start: 4;
-    grid-row-start: 4;
+    grid-column-start: 1;
+    grid-row-start: 3;
     background-image: url("../../assets/BackgroundProject2.jpg");
     background-attachment: fixed;
     background-position: center;

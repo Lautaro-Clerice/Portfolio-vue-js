@@ -5,19 +5,6 @@
         < <span> Lautaro clerice </span> />
       </div>
       <div class="lista">
-        <!-- <p
-          class="list-item"
-          :class="{ scrolled: isScrolled }"
-          @click="scrollToElement('#me')"
-        >
-        <div class="icon-mobile-container">
-          <v-icon
-          class="icon-mobile"
-            name="bi-person-circle"
-          />
-        </div>
-          Sobre mi
-        </p> -->
         <p
           class="list-item"
           :class="{ scrolled: isScrolled }"
